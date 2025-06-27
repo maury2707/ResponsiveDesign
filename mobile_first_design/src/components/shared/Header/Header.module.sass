@@ -1,28 +1,37 @@
 .header
-  margin: 0
-  padding: 0
-  background: $color-primary
-  color: $text-color
-  padding: 0 1rem * 2
 
-  & > nav
-    width: 100%
-    height: 50px
+    &:hover
+        transition-duration: 0.3s
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+        transsition: 0.3s
+        border-radius: 5px
+        background: linear-gradient(34deg,#d3a8bb 0%, #6597cf 100%)
+    
+    transition-duration: 0.3s
+    transsition: 0.3s
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    border-bottom-right-radius: 100
+    border-bottom-left-radius: 100
+    padding: 2px 16px
+    box-sizing: content-box
     display: flex
-    justify-content: space-between
-    gap: 10px
-    margin: 4
+    justify-content: center
+    align-items: center
+    background: linear-gradient(34deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%)
 
-  & > nav > svg
-    height: 36px
-    width: 36px
+    & > nav > a
+        font-size: 1.2rem
+        color: $text-color
+        text-decoration: none
+        border-radius: 15px
+        margin: 0.2rem
+        padding: 0.5rem 0.3rem
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
 
-  & > nav > ul > button
-    background: none
-    border-style: none
-    padding: 0px
-    margin-left: 10px
-
-  & > nav > ul > button > svg
-    height: 36px
-    width: 36px
+    & > nav > a:hover
+        transition-duration: 0.3s
+        transform: scale(1.05)
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+        transsition: 0.3s
+        border-radius: 5px
+        background: linear-gradient(34deg,#d3a8bb 0%, #6597cf 100%)
