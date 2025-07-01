@@ -14,6 +14,7 @@ export const Presentation = () => {
             Nuestro objetivo es ofrecer a nuestros clientes la mejor calidad y servicio, para que puedan disfrutar de la experiencia de cocinar y hornear.
             <br />
             ¡Explora nuestro catálogo y descubre todo lo que tenemos para ofrecerte!
+            <span> Droplist </span>
           </p>
         </div>
         <div className={styles.Containers}> 

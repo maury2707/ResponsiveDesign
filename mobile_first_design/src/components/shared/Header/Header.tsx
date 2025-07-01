@@ -1,4 +1,6 @@
 import styles from "./Header.module.sass";
+import Image from "next/image";
+
 export const Header = () => {
     return(
       <header className={styles.header}>
@@ -7,8 +9,13 @@ export const Header = () => {
             <a href="">Quienes somos!</a>
             <a href="">Servicios!</a>
             <a href="">Productos!</a>
-
-            <img src="a" alt="Imagen de carrito" />
+            
+            <Image
+              src="/icons/cart-plus-svgrepo-com.svg"
+              alt="Logo de Navalu"
+              width={25}
+              height={25}
+            />
         </nav>
       </header>
     )

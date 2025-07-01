@@ -1,25 +1,32 @@
 .header
 
-    &:hover
+    &:hover // Hover transitions for the header box
         transition-duration: 0.3s
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
-        transsition: 0.3s
         border-radius: 5px
         background: linear-gradient(34deg,#d3a8bb 0%, #6597cf 100%)
     
+    // Transitions from hover to Original state for border radius + Colors
     transition-duration: 0.3s
-    transsition: 0.3s
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
     border-bottom-right-radius: 100
     border-bottom-left-radius: 100
-    padding: 2px 16px
-    box-sizing: content-box
-    display: flex
-    justify-content: center
-    align-items: center
-    background: linear-gradient(34deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%)
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+    
+    // Padding and display properties 
+    +respond-to('mobile') 
+        padding: 2px 16px
+        display: flex
+        justify-content: center
+        background: linear-gradient(34deg,rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%)
 
-    & > nav > a
+  
+    +respond-to('tablet')
+        padding: 2px 16px
+        display: flex
+        justify-content: center
+        background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%)
+
+    & > nav > a // Styles for the nav links in the header
         font-size: 1.2rem
         color: $text-color
         text-decoration: none
@@ -28,10 +35,17 @@
         padding: 0.5rem 0.3rem
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
 
-    & > nav > a:hover
+    & > nav > a:hover // Hover effects for the nav links
         transition-duration: 0.3s
         transform: scale(1.05)
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
         transsition: 0.3s
         border-radius: 5px
         background: linear-gradient(34deg,#d3a8bb 0%, #6597cf 100%)
+    
+    & > nav > img // Styles for the image in the header
+        font-size: 1.2rem
+        border-radius: 15px
+        margin: 0.2rem
+        padding: 0.5rem 0.3rem
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
